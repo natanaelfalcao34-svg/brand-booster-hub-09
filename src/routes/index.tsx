@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import heroImg from "@/assets/hero-acessorios.jpg";
 import logoAsset from "@/assets/logo-mania-das-capas.jpg.asset.json";
+import { track } from "@/lib/track";
 import qrcodeAsset from "@/assets/qrcode-avaliacao.png.asset.json";
 
 const WHATSAPP = "5527996535765";
@@ -65,6 +66,7 @@ function Index() {
   const copyPass = async () => {
     try {
       await navigator.clipboard.writeText(WIFI_PASS);
+      track("wifi_copy");
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
@@ -82,6 +84,7 @@ function Index() {
             href={`https://wa.me/${WHATSAPP}`}
             target="_blank"
             rel="noreferrer"
+            onClick={() => track("whatsapp")}
             className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
           >
             <MessageCircle className="size-4" />
@@ -109,6 +112,7 @@ function Index() {
                 href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Olá! Vim pelo site da Mania das Capas.")}`}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => track("whatsapp")}
                 className="glow inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
               >
                 <MessageCircle className="size-4" />
@@ -118,6 +122,7 @@ function Index() {
                 href={MAPS_URL}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => track("maps")}
                 className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold transition hover:bg-secondary"
               >
                 <MapPin className="size-4" />
@@ -191,7 +196,8 @@ function Index() {
             <ul className="mt-6 space-y-5 text-sm">
               <li className="flex gap-3">
                 <MapPin className="size-5 shrink-0 text-primary" />
-                <a href={MAPS_URL} target="_blank" rel="noreferrer" className="hover:text-primary">
+                <a href={MAPS_URL} target="_blank" rel="noreferrer"
+                onClick={() => track("maps")} className="hover:text-primary">
                   {ADDRESS}
                 </a>
               </li>
@@ -212,6 +218,7 @@ function Index() {
                 href="https://instagram.com/maniadascapas"
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => track("instagram")}
                 className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition hover:bg-secondary"
               >
                 <Instagram className="size-4 text-primary" />
@@ -221,6 +228,7 @@ function Index() {
                 href="https://facebook.com/maniadascapas"
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => track("facebook")}
                 className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition hover:bg-secondary"
               >
                 <Facebook className="size-4 text-primary" />
@@ -251,6 +259,7 @@ function Index() {
             href={REVIEW_URL}
             target="_blank"
             rel="noreferrer"
+            onClick={() => track("qrcode")}
             className="mt-6 inline-block rounded-xl bg-white p-4 transition hover:scale-[1.03]"
           >
             <img
@@ -265,6 +274,7 @@ function Index() {
               href={REVIEW_URL}
               target="_blank"
               rel="noreferrer"
+              onClick={() => track("review_button")}
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:opacity-90"
             >
               <Star className="size-5 fill-current" />
@@ -301,6 +311,7 @@ function Index() {
         href={`https://wa.me/${WHATSAPP}`}
         target="_blank"
         rel="noreferrer"
+        onClick={() => track("whatsapp_float")}
         aria-label="Falar no WhatsApp"
         className="fixed right-5 bottom-5 z-40 inline-flex size-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-panel transition hover:scale-105"
       >
