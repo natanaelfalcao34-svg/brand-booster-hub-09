@@ -28,6 +28,7 @@ const MAPS_URL =
   encodeURIComponent("Avenida Brasil 982, Novo Horizonte, Serra ES");
 const WIFI_SSID = "MANIA DAS CAPAS";
 const WIFI_PASS = "HOPEMA2026";
+const REVIEW_URL = "https://g.page/r/CSIqReQasS88EBM/review";
 
 export const Route = createFileRoute("/")({
   head: () => ({
