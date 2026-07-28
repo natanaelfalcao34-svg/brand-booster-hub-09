@@ -14,9 +14,11 @@ import {
   Headphones,
   Cable,
   MessageCircle,
+  Star,
 } from "lucide-react";
 import heroImg from "@/assets/hero-acessorios.jpg";
 import logoAsset from "@/assets/logo-mania-das-capas.jpg.asset.json";
+import qrcodeAsset from "@/assets/qrcode-avaliacao.png.asset.json";
 
 const WHATSAPP = "5527996535765";
 const WHATSAPP_LABEL = "(27) 99653-5765";
