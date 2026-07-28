@@ -43,41 +43,41 @@
   --color-surface-foreground: var(--surface-foreground);
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --shadow-glow: 0 0 0 1px oklch(0.86 0.21 122 / 0.25), 0 18px 50px -20px oklch(0.86 0.21 122 / 0.45);
+  --shadow-glow: 0 0 0 1px oklch(0.82 0.14 85 / 0.3), 0 18px 50px -20px oklch(0.82 0.14 85 / 0.45);
   --shadow-panel: 0 24px 60px -30px oklch(0 0 0 / 0.9);
 }
 
 :root {
   --radius: 0.9rem;
-  --background: oklch(0.16 0.012 250);
+  --background: oklch(0.13 0.006 60);
   --foreground: oklch(0.97 0.005 250);
-  --surface: oklch(0.21 0.014 250);
+  --surface: oklch(0.18 0.008 60);
   --surface-foreground: oklch(0.97 0.005 250);
-  --card: oklch(0.21 0.014 250);
+  --card: oklch(0.18 0.008 60);
   --card-foreground: oklch(0.97 0.005 250);
   --popover: oklch(0.21 0.014 250);
   --popover-foreground: oklch(0.97 0.005 250);
-  --primary: oklch(0.86 0.21 122);
-  --primary-foreground: oklch(0.17 0.03 130);
+  --primary: oklch(0.82 0.14 85);
+  --primary-foreground: oklch(0.15 0.02 85);
   --secondary: oklch(0.27 0.016 250);
   --secondary-foreground: oklch(0.97 0.005 250);
   --muted: oklch(0.25 0.014 250);
   --muted-foreground: oklch(0.72 0.015 250);
-  --accent: oklch(0.86 0.21 122);
-  --accent-foreground: oklch(0.17 0.03 130);
+  --accent: oklch(0.82 0.14 85);
+  --accent-foreground: oklch(0.15 0.02 85);
   --destructive: oklch(0.6 0.23 27);
   --destructive-foreground: oklch(0.98 0.005 250);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 16%);
-  --ring: oklch(0.86 0.21 122);
+  --ring: oklch(0.82 0.14 85);
   --whatsapp: oklch(0.72 0.17 152);
   --whatsapp-foreground: oklch(0.16 0.03 152);
   --gradient-hero: radial-gradient(
       120% 90% at 15% 0%,
-      oklch(0.86 0.21 122 / 0.22) 0%,
+      oklch(0.82 0.14 85 / 0.22) 0%,
       transparent 60%
     ),
-    linear-gradient(160deg, oklch(0.19 0.014 250) 0%, oklch(0.14 0.01 250) 100%);
+    linear-gradient(160deg, oklch(0.17 0.008 60) 0%, oklch(0.11 0.005 60) 100%);
 }
 
 @layer base {
