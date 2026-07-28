@@ -271,6 +271,18 @@ function Index() {
               Avaliar no Google
             </a>
           </div>
+          <p className="mt-4 text-xs text-muted-foreground">
+            Link de avaliação:{" "}
+            <a
+              href={REVIEW_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="break-all font-medium text-primary underline underline-offset-4"
+            >
+              {REVIEW_URL}
+            </a>
+          </p>
+
 
         </div>
       </section>
