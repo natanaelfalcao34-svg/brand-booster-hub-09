@@ -228,6 +228,35 @@ function Index() {
         </div>
       </section>
 
+      {/* Avaliação Google */}
+      <section id="avaliacao" className="mx-auto max-w-6xl px-5 pb-16">
+        <div className="rounded-2xl border border-border bg-card p-8 text-center shadow-panel">
+          <p className="eyebrow">Nos avalie no Google</p>
+          <h2 className="mt-2 text-2xl font-semibold sm:text-3xl">
+            Sua opinião vale 5 estrelas ⭐
+          </h2>
+          <div className="mt-3 flex items-center justify-center gap-1">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star key={i} className="size-6 fill-primary text-primary" />
+            ))}
+          </div>
+          <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground">
+            Aponte a câmera do seu celular para o QR Code e deixe sua avaliação
+            no Google Meu Negócio.
+          </p>
+          <div className="mt-6 inline-block rounded-xl bg-white p-4">
+            <img
+              src={qrcodeAsset.url}
+              alt="QR Code para avaliar a Mania das Capas no Google"
+              className="size-48 sm:size-56"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
       <footer className="border-t border-border/60">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-5 py-8 text-center text-sm text-muted-foreground sm:flex-row sm:justify-between sm:text-left">
           <Logo />
