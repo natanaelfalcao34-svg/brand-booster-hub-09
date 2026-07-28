@@ -243,17 +243,34 @@ function Index() {
             ))}
           </div>
           <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground">
-            Aponte a câmera do seu celular para o QR Code e deixe sua avaliação
-            no Google Meu Negócio.
+            Aponte a câmera do seu celular para o QR Code ou toque no botão para
+            deixar sua avaliação no Google.
           </p>
-          <div className="mt-6 inline-block rounded-xl bg-white p-4">
+          <a
+            href={REVIEW_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-block rounded-xl bg-white p-4 transition hover:scale-[1.03]"
+          >
             <img
               src={qrcodeAsset.url}
               alt="QR Code para avaliar a Mania das Capas no Google"
               className="size-48 sm:size-56"
               loading="lazy"
             />
+          </a>
+          <div>
+            <a
+              href={REVIEW_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:opacity-90"
+            >
+              <Star className="size-5 fill-current" />
+              Avaliar no Google
+            </a>
           </div>
+
         </div>
       </section>
 
