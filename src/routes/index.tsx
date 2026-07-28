@@ -16,6 +16,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import heroImg from "@/assets/hero-acessorios.jpg";
+import logoAsset from "@/assets/logo-mania-das-capas.jpg.asset.json";
 
 const WHATSAPP = "5527996535765";
 const WHATSAPP_LABEL = "(27) 99653-5765";
@@ -90,6 +91,7 @@ function Index() {
       <section className="hero-surface">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:py-24">
           <div>
+            <Logo className="mb-6 h-24 rounded-xl border border-border/60" />
             <p className="eyebrow">Serra • Espírito Santo</p>
             <h1 className="mt-4 text-4xl leading-[1.05] font-bold sm:text-5xl md:text-6xl">
               Tudo para o seu celular em{" "}
@@ -247,17 +249,12 @@ function Index() {
   );
 }
 
-function Logo() {
+function Logo({ className = "h-11" }: { className?: string }) {
   return (
-    <div className="flex items-center gap-2.5">
-      <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-        <Smartphone className="size-5" />
-      </span>
-      <span className="font-display text-base leading-4 font-bold tracking-tight">
-        MANIA
-        <br />
-        <span className="text-primary">DAS CAPAS</span>
-      </span>
-    </div>
+    <img
+      src={logoAsset.url}
+      alt="Mania das Capas"
+      className={`${className} w-auto rounded-md`}
+    />
   );
 }
