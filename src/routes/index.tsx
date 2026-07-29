@@ -20,7 +20,6 @@ import fachadaAsset from "@/assets/fachada-loja.jpg.asset.json";
 import logoAsset from "@/assets/logo-mania-das-capas.jpg.asset.json";
 import { track } from "@/lib/track";
 import qrcodeAsset from "@/assets/qrcode-avaliacao.png.asset.json";
-import bannerCapasAsset from "@/assets/banner-samsung-a07.jpg.asset.json";
 
 
 const WHATSAPP = "5527996535765";
