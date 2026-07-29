@@ -16,7 +16,7 @@ import {
   MessageCircle,
   Star,
 } from "lucide-react";
-import heroImg from "@/assets/hero-acessorios.jpg";
+import fachadaAsset from "@/assets/fachada-loja.jpg.asset.json";
 import logoAsset from "@/assets/logo-mania-das-capas.jpg.asset.json";
 import { track } from "@/lib/track";
 import qrcodeAsset from "@/assets/qrcode-avaliacao.png.asset.json";
@@ -133,11 +133,9 @@ function Index() {
 
           <div className="panel overflow-hidden">
             <img
-              src={heroImg}
-              alt="Capas de celular, películas de vidro, fones e cabos da Mania das Capas"
-              width={1600}
-              height={1008}
-              className="h-full w-full object-cover"
+              src={fachadaAsset.url}
+              alt="Fachada da loja Mania das Capas na Avenida Brasil, Serra/ES"
+              className="h-full max-h-[520px] w-full object-cover"
             />
           </div>
         </div>
