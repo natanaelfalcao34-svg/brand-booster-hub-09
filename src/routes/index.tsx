@@ -20,6 +20,7 @@ import fachadaAsset from "@/assets/fachada-loja.jpg.asset.json";
 import logoAsset from "@/assets/logo-mania-das-capas.jpg.asset.json";
 import { track } from "@/lib/track";
 import qrcodeAsset from "@/assets/qrcode-avaliacao.png.asset.json";
+import bannerCapasAsset from "@/assets/banner-samsung-a07.jpg.asset.json";
 
 const WHATSAPP = "5527996535765";
 const WHATSAPP_LABEL = "(27) 99653-5765";
@@ -154,6 +155,21 @@ function Index() {
             </div>
           ))}
         </div>
+
+        <a
+          href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Olá! Quero a capa para Samsung A07.")}`}
+          target="_blank"
+          rel="noreferrer"
+          onClick={() => track("whatsapp")}
+          className="panel mt-8 block overflow-hidden transition hover:-translate-y-1"
+        >
+          <img
+            src={bannerCapasAsset.url}
+            alt="Chegou capas para Samsung A07 na Mania das Capas — estoque limitado"
+            className="w-full object-cover"
+            loading="lazy"
+          />
+        </a>
       </section>
 
       {/* Wi-Fi + Contato */}
