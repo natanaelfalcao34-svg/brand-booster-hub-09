@@ -173,6 +173,10 @@ function Index() {
         </a>
       </section>
 
+      <CatalogGrid />
+
+
+
       {/* Wi-Fi + Contato */}
       <section id="contato" className="mx-auto max-w-6xl px-5 pb-16">
         <div className="grid gap-4 lg:grid-cols-2">
