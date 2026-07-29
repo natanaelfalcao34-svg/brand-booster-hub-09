@@ -260,7 +260,39 @@ function Index() {
         </div>
       </section>
 
+      {/* Nossa história */}
+      <section id="historia" className="mx-auto max-w-4xl px-5 pb-14">
+        <div className="panel p-8">
+          <p className="eyebrow">Nossa história</p>
+          <h2 className="mt-3 text-2xl font-bold sm:text-3xl">
+            De uma vitrine pequena no Novo Horizonte para a loja de todo mundo
+          </h2>
+          <div className="mt-5 space-y-4 text-sm leading-relaxed text-muted-foreground">
+            <p>
+              A Mania das Capas abriu as portas em <strong className="text-foreground">2019</strong>,
+              na Avenida Brasil, no <strong className="text-foreground">Novo Horizonte</strong>, em
+              Serra/ES. No começo era simples: um balcão, algumas dezenas de capas penduradas e uma
+              vontade enorme de resolver o problema de quem tinha acabado de deixar o celular cair
+              no chão.
+            </p>
+            <p>
+              O bairro foi quem fez a loja crescer. Cliente indicava para o vizinho, o vizinho
+              trazia o filho, o filho trazia a turma da escola. Cada pedido de “vocês têm película
+              para esse modelo?” virou um item novo na prateleira — e foi assim que chegaram os
+              fones, as caixinhas, os carregadores, os cabos e os eletrônicos do dia a dia.
+            </p>
+            <p>
+              Hoje somos ponto de referência no Novo Horizonte: aplicação de película na hora,
+              Wi‑Fi liberado para quem entra, atendimento pelo WhatsApp e aquele papo de sempre com
+              quem já conhecemos pelo nome. Crescemos junto com a comunidade — e é por isso que a
+              gente continua aqui, na mesma esquina, com o mesmo cuidado do primeiro dia.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Produtos */}
+
       <section className="mx-auto max-w-6xl px-5 pb-14">
         <p className="eyebrow">O que vendemos</p>
         <h2 className="mt-3 text-2xl font-bold sm:text-3xl">Produtos da loja</h2>
