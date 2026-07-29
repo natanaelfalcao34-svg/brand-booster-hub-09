@@ -21,6 +21,7 @@ import logoAsset from "@/assets/logo-mania-das-capas.jpg.asset.json";
 import { track } from "@/lib/track";
 import qrcodeAsset from "@/assets/qrcode-avaliacao.png.asset.json";
 import bannerCapasAsset from "@/assets/banner-samsung-a07.jpg.asset.json";
+import { CatalogGrid } from "@/components/CatalogGrid";
 
 const WHATSAPP = "5527996535765";
 const WHATSAPP_LABEL = "(27) 99653-5765";
