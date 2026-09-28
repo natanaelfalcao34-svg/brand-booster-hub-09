@@ -63,8 +63,8 @@ const products = [
 
 const reviews = [
   {
-    name: "Cliente no Novo Horizonte",
-    text: "Atendimento ótimo e a película ficou perfeita, sem bolha nenhuma. Virei cliente fiel.",
+    name: "Ketelin L. Silva",
+    text: "Loja excelente! Encontrei o copo térmico que minha filha queria, e ainda por um precinho top! Atendimento ágil e atencioso.",
   },
   {
     name: "Cliente na Serra",
