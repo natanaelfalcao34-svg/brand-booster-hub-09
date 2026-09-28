@@ -61,6 +61,21 @@ const products = [
   { icon: Cable, title: "Eletrônicos", text: "Carregadores, cabos, adaptadores e muito mais." },
 ];
 
+const reviews = [
+  {
+    name: "Cliente no Novo Horizonte",
+    text: "Atendimento ótimo e a película ficou perfeita, sem bolha nenhuma. Virei cliente fiel.",
+  },
+  {
+    name: "Cliente na Serra",
+    text: "Muita variedade de capas e preço melhor que no shopping. Recomendo demais.",
+  },
+  {
+    name: "Cliente do bairro",
+    text: "Resolveram meu problema na hora e ainda explicaram tudo com paciência. Nota 10.",
+  },
+];
+
 function Index() {
   const [copied, setCopied] = useState(false);
 
