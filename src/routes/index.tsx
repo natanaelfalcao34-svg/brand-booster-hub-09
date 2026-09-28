@@ -163,7 +163,7 @@ function Index() {
           <p className="eyebrow">Avaliações no Google</p>
 
           <div className="mt-4 flex flex-col items-center gap-2">
-            <span className="font-display text-6xl leading-none font-bold text-primary">5,0</span>
+            <span className="font-display text-6xl leading-none font-bold text-primary">4,9</span>
             <div className="flex items-center justify-center gap-1">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="size-7 fill-primary text-primary" />
