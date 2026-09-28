@@ -71,8 +71,8 @@ const reviews = [
     text: "Excelente estabelecimento, fui muito bem atendido e tem produtos excelentes!!! Volto sempre e recomendo para todos.",
   },
   {
-    name: "Cliente do bairro",
-    text: "Resolveram meu problema na hora e ainda explicaram tudo com paciência. Nota 10.",
+    name: "Miila Oliveira",
+    text: "Excelente atendimento! Os preços são ótimos, muito capricho e profissionalismo.",
   },
 ];
 
