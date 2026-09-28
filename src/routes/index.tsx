@@ -61,6 +61,21 @@ const products = [
   { icon: Cable, title: "Eletrônicos", text: "Carregadores, cabos, adaptadores e muito mais." },
 ];
 
+const reviews = [
+  {
+    name: "Cliente no Novo Horizonte",
+    text: "Atendimento ótimo e a película ficou perfeita, sem bolha nenhuma. Virei cliente fiel.",
+  },
+  {
+    name: "Cliente na Serra",
+    text: "Muita variedade de capas e preço melhor que no shopping. Recomendo demais.",
+  },
+  {
+    name: "Cliente do bairro",
+    text: "Resolveram meu problema na hora e ainda explicaram tudo com paciência. Nota 10.",
+  },
+];
+
 function Index() {
   const [copied, setCopied] = useState(false);
 
@@ -145,47 +160,77 @@ function Index() {
       {/* Avaliação Google — destaque principal */}
       <section id="avaliacao" className="mx-auto max-w-4xl px-5 py-14">
         <div className="panel glow p-8 text-center">
-          <p className="eyebrow">Nos avalie no Google</p>
-          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">
-            Sua opinião vale 5 estrelas ⭐
-          </h2>
-          <div className="mt-4 flex items-center justify-center gap-1">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} className="size-7 fill-primary text-primary" />
+          <p className="eyebrow">Avaliações no Google</p>
+
+          <div className="mt-4 flex flex-col items-center gap-2">
+            <span className="font-display text-6xl leading-none font-bold text-primary">5,0</span>
+            <div className="flex items-center justify-center gap-1">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} className="size-7 fill-primary text-primary" />
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Nota média dos clientes da Mania das Capas
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-4 text-left sm:grid-cols-3">
+            {reviews.map((r) => (
+              <div key={r.name} className="rounded-2xl border border-border/60 p-5">
+                <div className="flex gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} className="size-3.5 fill-primary text-primary" />
+                  ))}
+                </div>
+                <p className="mt-3 text-sm text-muted-foreground">“{r.text}”</p>
+                <p className="mt-3 text-xs font-semibold tracking-wide uppercase">{r.name}</p>
+              </div>
             ))}
           </div>
-          <p className="mx-auto mt-4 max-w-md text-sm text-muted-foreground">
-            Aponte a câmera do celular para o QR Code ou toque no botão abaixo.
-            Leva menos de 30 segundos e ajuda demais a nossa loja!
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+            <a
+              href={MAPS_URL}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => track("maps")}
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold transition hover:bg-secondary"
+            >
+              <Star className="size-4 text-primary" />
+              Ver avaliações
+            </a>
+            <a
+              href={REVIEW_URL}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => track("review_button")}
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+            >
+              <Star className="size-4 fill-current" />
+              Avaliar no Google
+            </a>
+          </div>
+
+          <p className="mx-auto mt-8 max-w-md text-sm text-muted-foreground">
+            Ou aponte a câmera do celular para o QR Code. Leva menos de 30 segundos!
           </p>
           <a
             href={REVIEW_URL}
             target="_blank"
             rel="noreferrer"
             onClick={() => track("qrcode")}
-            className="mt-6 inline-block rounded-xl bg-white p-4 transition hover:scale-[1.03]"
+            className="mt-5 inline-block rounded-xl bg-white p-4 transition hover:scale-[1.03]"
           >
             <img
               src={qrcodeAsset.url}
               alt="QR Code para avaliar a Mania das Capas no Google"
-              className="size-48 sm:size-56"
+              className="size-40 sm:size-48"
               loading="lazy"
             />
           </a>
-          <div>
-            <a
-              href={REVIEW_URL}
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => track("review_button")}
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition hover:opacity-90"
-            >
-              <Star className="size-5 fill-current" />
-              Avaliar no Google
-            </a>
-          </div>
         </div>
       </section>
+
 
       {/* Wi-Fi grátis — destaque */}
       <section className="mx-auto max-w-4xl px-5 pb-14">
