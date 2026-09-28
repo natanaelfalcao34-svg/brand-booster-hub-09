@@ -67,8 +67,8 @@ const reviews = [
     text: "Loja excelente! Encontrei o copo térmico que minha filha queria, e ainda por um precinho top! Atendimento ágil e atencioso.",
   },
   {
-    name: "Cliente na Serra",
-    text: "Muita variedade de capas e preço melhor que no shopping. Recomendo demais.",
+    name: "Isaque Rodrigues",
+    text: "Excelente estabelecimento, fui muito bem atendido e tem produtos excelentes!!! Volto sempre e recomendo para todos.",
   },
   {
     name: "Cliente do bairro",
